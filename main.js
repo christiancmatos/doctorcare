@@ -12,9 +12,6 @@ function onScroll() {
 }
 
 
-
-
-
 function activateMenuAtCurrentSection(section) {
     // linha alvo
     const targetLine = scrollY + innerHeight / 2
@@ -62,35 +59,6 @@ function activateMenuAtCurrentSection(section) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function showNavOnScroll() {
     if(scrollY > 0) {
         navigation.classList.add('scroll')
@@ -129,31 +97,6 @@ ScrollReveal({
     #about,
     #about header,
     #about .content`);
-
-
-
-
-
-
-
-
-/*
-const onScroll = window.addEventListener('scroll', () => {
-    if(scrollY > 0) {
-        navigation.classList.add('scroll')
-    } else {
-        navigation.classList.remove('scroll')
-    }
-})
-
-const openMenu = document.querySelector('.open-menu').addEventListener('click', () => {
-    document.body.classList.add('menu-expanded')
-})
-
-const closeMenu = document.querySelector('.close-menu').addEventListener('click', () => {
-    document.body.classList.remove('menu-expanded')
-})
-*/
 
 
 const chekboxDarkMode = document.querySelector('.button--dark-mode input').addEventListener('click', (e) => {
